@@ -1,7 +1,7 @@
 console.log("JS YÜKLENDİ");
 
 // Takvim 1. günü 10 Ocak
-const startDate = new Date(2025, 0, 10);
+const startDate = new Date(2026, 0, 10);
 const today = new Date(); 
 
 let currentDay = Math.floor((today - startDate) / (1000 * 60 * 60 * 24)) + 1;
@@ -92,5 +92,6 @@ for(let i = 1; i <= 24; i++){
 closeBtn.addEventListener("click", ()=>{
   popup.style.display = "none";
 });
+
 
 
