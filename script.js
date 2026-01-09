@@ -6,6 +6,7 @@ const today = new Date();
 
 
 let currentDay = Math.floor((today - startDate) / (1000 * 60 * 60 * 24)) + 1;
+if(currentDay < 1) currentDay = 0;
 if(currentDay > 24) currentDay = 24;
 
 const calendar = document.getElementById("calendar");
@@ -92,4 +93,5 @@ for(let i = 1; i <= 24; i++){
 closeBtn.addEventListener("click", ()=>{
   popup.style.display = "none";
 });
+
 
