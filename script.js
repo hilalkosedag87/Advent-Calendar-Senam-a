@@ -4,8 +4,8 @@ console.log("JS YÜKLENDİ");
 const startDate = new Date(2026, 0, 10);
 const today = new Date(); 
 
+
 let currentDay = Math.floor((today - startDate) / (1000 * 60 * 60 * 24)) + 1;
-if(currentDay < 1) currentDay = 0;
 if(currentDay > 24) currentDay = 24;
 
 const calendar = document.getElementById("calendar");
